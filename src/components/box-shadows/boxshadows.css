@@ -1,0 +1,21 @@
+.app__heading{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: transparent;
+    text-transform: uppercase;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.app__wrapper {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
