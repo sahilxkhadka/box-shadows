@@ -1,7 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 10vh;
+    background-color: #393939;
+    display: grid;
+    place-items: center;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 30;
+}
+
 .app__heading{
     text-align: center;
     font-family: sans-serif;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: transparent;
     text-transform: uppercase;
@@ -12,7 +29,7 @@
 }
 .app__wrapper {
     width: 80%;
-    margin: 3rem auto;
+    margin: 18vh auto 3rem auto;
     display: flex;
     justify-content: space-between;
     gap: 8rem;
@@ -43,8 +60,20 @@
     align-items: flex-end;
     box-sizing: border-box;
     padding: 2rem;
-    flex: 25%;
-    height: 360px;
+    /* flex: 25%; */
+    margin: 0 auto;
+    width: 250px;
+    height:250px;
+    position: relative;
+}
+.box-shadow_no{
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #3c3c3c;
+    opacity: 0.5;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .glow-on-hover {
     font-family: sans-serif;
@@ -106,4 +135,12 @@
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+
+@media screen and (max-width:768px) {
+    .app__heading{
+        font-size: 2rem;
+
+    }
 }
